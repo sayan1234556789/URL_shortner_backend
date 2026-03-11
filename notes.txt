@@ -1,0 +1,25 @@
+url schema --
+        -- shorturl
+        -- redirectedurl
+        -- visithistory -- which will be array of object with timestamp type number
+        -- timestamp true -- two more fields are automatically added createdAt and updatedAt
+
+routes
+    -- url router
+            -- post/
+
+
+controller 
+        -- urlController
+            -- createShortUrl
+                -- original url from req.body
+                -- create new url model
+                -- send res to the user with new code
+
+            -- redirectUrl
+                -- shorturl from params 
+                -- search in db for the shorturl
+                -- click inc
+                -- res.redirect(to the original url)
+
+install nanoid from npm we provide number of char and it will give that number of char --- details documentation
